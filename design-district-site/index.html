@@ -1497,15 +1497,69 @@
                 </div>
             </div>
             
-            <!-- Mobile Responsive -->
+            <!-- Enhanced Mobile Responsive -->
             <style>
                 @media (max-width: 768px) {
-                    .membership .container > div:last-child {
+                    /* Stack layout vertically on mobile */
+                    .membership .container > div:last-child > div:first-child,
+                    .membership .container > div:last-child > div:nth-child(2) {
                         grid-template-columns: 1fr !important;
+                        gap: 2rem !important;
                         text-align: center !important;
                     }
-                    .membership .container > div:last-child > div:last-child {
+                    
+                    /* Image sizing for mobile */
+                    .membership img {
+                        max-width: 100% !important;
+                        height: auto !important;
+                    }
+                    
+                    /* Center content */
+                    .membership .container > div:last-child > div {
                         text-align: center !important;
+                    }
+                    
+                    /* Button stack on mobile */
+                    .membership .container button,
+                    .membership .container a {
+                        display: block !important;
+                        width: 100% !important;
+                        margin-bottom: 1rem !important;
+                        text-align: center !important;
+                    }
+                    
+                    /* Connect Portal mobile title */
+                    .membership h3 {
+                        font-size: 1.8em !important;
+                    }
+                    
+                    /* Connect Portal mobile description */
+                    .membership p {
+                        font-size: 1em !important;
+                        padding: 0 1rem !important;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    /* Extra small screens */
+                    .membership .container > div:last-child {
+                        padding: 0 1rem !important;
+                    }
+                    
+                    .membership h3 {
+                        font-size: 1.5em !important;
+                    }
+                    
+                    .membership .container button,
+                    .membership .container a {
+                        padding: 0.8rem 1.5rem !important;
+                        font-size: 0.9em !important;
+                    }
+                    
+                    /* Benefits list mobile */
+                    .membership ul li {
+                        font-size: 0.9em !important;
+                        padding: 0.4rem 0 !important;
                     }
                 }
             </style>
@@ -1904,11 +1958,13 @@
             successElement.style.borderRadius = '8px';
             successElement.style.marginTop = '1rem';
             
-            // Style based on type
+            // Style based on type - Design District Branding
             switch(type) {
                 case 'success':
-                    successElement.style.background = '#28a745';
-                    successElement.style.color = 'white';
+                    successElement.style.background = 'linear-gradient(135deg, #0a0a0b 0%, #1a1a1a 100%)';
+                    successElement.style.color = '#fff';
+                    successElement.style.border = '2px solid #d4af37';
+                    successElement.style.boxShadow = '0 8px 30px rgba(212, 175, 55, 0.3)';
                     break;
                 case 'error':
                     successElement.style.background = '#dc3545';
@@ -2039,6 +2095,22 @@
                 style.textContent = '@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }';
                 document.head.appendChild(style);
             }
+        });
+
+        // Mobile UX Enhancement: Add touch feedback
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add touch feedback for mobile buttons
+            const buttons = document.querySelectorAll('button, a[href]');
+            buttons.forEach(button => {
+                button.addEventListener('touchstart', function() {
+                    this.style.transform = 'scale(0.95)';
+                });
+                button.addEventListener('touchend', function() {
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
         });
 
         // Floating CTA Button Control
