@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://miamidesigndistrictchamberofcommerce.org/sitemap.xml
+
+# Block common bot/spam paths
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Miami Design District Chamber of Commerce
+# Exclusive business network for luxury brands and designers
