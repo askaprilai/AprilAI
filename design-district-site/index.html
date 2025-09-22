@@ -1734,6 +1734,8 @@
         // Multi-service form handler (EmailJS + Google Sheets + Autoresponder)
         document.getElementById('emailForm').addEventListener('submit', async function(e) {
             e.preventDefault();
+            console.log('🚀 FORM SUBMIT HANDLER CALLED - LATEST VERSION 2024-12-22');
+            console.log('📧 Using EmailJS service_pr0l749 - DEBUGGING VERSION');
             
             const submitButton = e.target.querySelector('button[type="submit"]');
             const originalButtonText = submitButton.textContent;
@@ -1771,7 +1773,8 @@
                 
                 // Use EmailJS with CORRECT credentials service_pr0l749
                 try {
-                    console.log('Sending emails via EmailJS with service_pr0l749...');
+                    console.log('🔥 EMAILJS ATTEMPT STARTING - service_pr0l749');
+                    console.log('📩 EmailJS initialized:', typeof emailjs !== 'undefined');
                     
                     // Send auto-responder to user
                     const userEmailResponse = await emailjs.send(
