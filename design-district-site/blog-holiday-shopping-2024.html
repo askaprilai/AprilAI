@@ -55,6 +55,13 @@
         .stats-box { background: #f8f9fa; padding: 1.5rem; border-left: 4px solid #d4af37; margin: 2rem 0; }
         .back-link { display: inline-block; margin-bottom: 2rem; color: #d4af37; text-decoration: none; }
         .back-link:hover { text-decoration: underline; }
+        .author-bio { background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #d4af37; margin: 2rem 0; display: flex; align-items: center; gap: 1.5rem; }
+        .author-photo { flex-shrink: 0; }
+        .author-info { flex: 1; }
+        @media (max-width: 768px) {
+            .author-bio { flex-direction: column; text-align: center; gap: 1rem; }
+            .author-photo { margin: 0 auto; }
+        }
     </style>
 </head>
 <body>
@@ -92,8 +99,12 @@
             <h3>Unparalleled Luxury Brand Selection</h3>
             <p>The Miami Design District hosts flagship stores from the world's most coveted luxury brands. From European fashion houses to cutting-edge contemporary designers, shoppers can find exclusive pieces and limited-edition collections that aren't available anywhere else in South Florida.</p>
             
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury retail storefronts in Miami Design District" style="width: 100%; max-width: 600px; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            
             <h3>Architectural Shopping Experience</h3>
             <p>Unlike traditional shopping centers, the Miami Design District offers a curated urban experience where stunning architecture enhances every shopping moment. The district's commitment to design excellence creates an atmosphere that elevates luxury retail to an art form.</p>
+            
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern architectural design elements in Miami Design District" style="width: 100%; max-width: 600px; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
             
             <h2>Holiday Shopping Trends in Luxury Retail</h2>
             
@@ -121,6 +132,8 @@
                 </ul>
             </div>
             
+            <img src="https://images.unsplash.com/photo-1529558442007-95ca56fd310c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Miami Design District street view with pedestrians and luxury shopping" style="width: 100%; max-width: 600px; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            
             <h2>Supporting Local Business Growth</h2>
             
             <p>Under my leadership, the <strong>Miami Design District Chamber of Commerce</strong> has played a crucial role in fostering business growth and collaboration within this thriving retail ecosystem. By connecting luxury brands, supporting emerging designers, and facilitating strategic partnerships, our Chamber ensures the district maintains its position as a global luxury destination.</p>
@@ -141,8 +154,20 @@
             
             <p>As we move into 2025, I am personally committed to ensuring the Miami Design District Chamber of Commerce continues supporting business growth, fostering innovation, and maintaining the district's reputation as one of the world's premier luxury shopping destinations.</p>
             
-            <p><em>- April Sabral, Executive Director<br>
-            Miami Design District Chamber of Commerce</em></p>
+            <!-- Author Bio Section -->
+            <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #d4af37; margin: 2rem 0; display: flex; align-items: center; gap: 1.5rem;">
+                <div style="flex-shrink: 0;">
+                    <img src="https://raw.githubusercontent.com/askaprilai/design-district-chamber/main/Images/april-sabral.jpg" 
+                         alt="April Sabral, Executive Director" 
+                         style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #d4af37; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);"
+                         onerror="this.src='https://via.placeholder.com/80x80/d4af37/ffffff?text=AS'; this.style.background='#d4af37';">
+                </div>
+                <div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: #333; font-size: 1.1em;">April Sabral</h4>
+                    <p style="margin: 0 0 0.5rem 0; color: #d4af37; font-weight: 600; font-size: 0.9em;">Executive Director</p>
+                    <p style="margin: 0; color: #666; font-size: 0.9em; line-height: 1.4;">April leads the Miami Design District Chamber of Commerce, driving strategic partnerships and business growth initiatives that position the district as a global luxury destination.</p>
+                </div>
+            </div>
             
             <hr style="margin: 3rem 0; border: 1px solid #d4af37;">
             
@@ -150,18 +175,18 @@
             <div style="font-size: 0.9em; color: #666; line-height: 1.4;">
                 <p><strong>Industry Reports:</strong></p>
                 <ul>
-                    <li>McKinsey & Company Global Luxury Report 2024</li>
-                    <li>Deloitte Global Luxury Consumer Survey 2024</li>
-                    <li>Bain & Company Luxury Goods Worldwide Market Study 2024</li>
-                    <li>Knight Frank Luxury Investment Index 2024</li>
+                    <li><a href="https://www.mckinsey.com/industries/retail/our-insights" target="_blank" style="color: #d4af37;">McKinsey & Company Global Luxury Report 2024</a></li>
+                    <li><a href="https://www2.deloitte.com/us/en/insights/industry/retail-distribution.html" target="_blank" style="color: #d4af37;">Deloitte Global Luxury Consumer Survey 2024</a></li>
+                    <li><a href="https://www.bain.com/insights/topics/luxury-goods/" target="_blank" style="color: #d4af37;">Bain & Company Luxury Goods Worldwide Market Study 2024</a></li>
+                    <li><a href="https://www.knightfrank.com/research" target="_blank" style="color: #d4af37;">Knight Frank Luxury Investment Index 2024</a></li>
                 </ul>
                 <p><strong>Local Sources:</strong></p>
                 <ul>
-                    <li>Miami-Dade Beacon Council Economic Impact Reports 2024</li>
-                    <li>Miami-Dade County Tax Assessor Annual Report 2024</li>
-                    <li>Visit Miami Tourism & Hospitality Board Statistics 2024</li>
-                    <li>CBRE Miami Retail Market Report Q3 2024</li>
-                    <li>International Council of Shopping Centers Research 2024</li>
+                    <li><a href="https://www.miamidade.gov/global/economy/beacon-council.page" target="_blank" style="color: #d4af37;">Miami-Dade Beacon Council Economic Impact Reports 2024</a></li>
+                    <li><a href="https://www.miamidade.gov/pa/" target="_blank" style="color: #d4af37;">Miami-Dade County Tax Assessor Annual Report 2024</a></li>
+                    <li><a href="https://www.miamiandbeaches.com/" target="_blank" style="color: #d4af37;">Visit Miami Tourism & Hospitality Board Statistics 2024</a></li>
+                    <li><a href="https://www.cbre.us/real-estate-services/real-estate-industries/retail-services" target="_blank" style="color: #d4af37;">CBRE Miami Retail Market Report Q3 2024</a></li>
+                    <li><a href="https://www.icsc.com/" target="_blank" style="color: #d4af37;">International Council of Shopping Centers Research 2024</a></li>
                 </ul>
             </div>
             
