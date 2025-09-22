@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/blog-holiday-shopping-2025",
+      "destination": "/blog-holiday-shopping-2025.html"
+    }
+  ],
+  "cleanUrls": true
+}
