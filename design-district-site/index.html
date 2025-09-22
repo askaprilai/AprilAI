@@ -1781,9 +1781,10 @@
                         'service_pr0l749', // Your CORRECT service ID
                         'template_v0bxoxk', // Your template ID
                         {
-                            to_name: name,
-                            to_email: email,
-                            company: company || 'your organization'
+                            name: name,
+                            email: email,
+                            company: company || 'your organization',
+                            message: `Welcome ${name}! Thank you for joining our waitlist.`
                         }
                     );
                     
@@ -1798,9 +1799,10 @@
                         'service_pr0l749', // Your CORRECT service ID  
                         'template_v0bxoxk', // Same template for now
                         {
-                            to_name: 'Admin Team',
-                            to_email: 'info@miamidesigndistrictchamberofcommerce.org',
-                            company: `New signup: ${name} from ${company || 'Unknown Company'}`
+                            name: 'Admin Team',
+                            email: 'info@miamidesigndistrictchamberofcommerce.org',
+                            company: `New signup: ${name} from ${company || 'Unknown Company'}`,
+                            message: `New member signup: ${name} (${email}) from ${company || 'Unknown Company'}`
                         }
                     );
                     
