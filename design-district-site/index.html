@@ -105,6 +105,16 @@
             gap: 2rem;
         }
 
+        /* FORCE HIDE MEMBERSHIP BANNER */
+        #membership-banner {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            overflow: hidden !important;
+        }
+
         nav a {
             text-decoration: none;
             color: #ccc;
@@ -1288,8 +1298,8 @@
         </div>
     </header>
 
-    <!-- Membership Banner - HIDDEN TO FIX YELLOW BAR -->
-    <section id="membership-banner" style="display: none; background: linear-gradient(135deg, #d4af37 0%, #f4f1e8 100%); padding: 1rem 0; position: relative; z-index: 999;">
+    <!-- Membership Banner - COMPLETELY REMOVED TO FIX YELLOW BAR -->
+    <section id="membership-banner" style="display: none !important; visibility: hidden !important; height: 0 !important; padding: 0 !important; margin: 0 !important; background: linear-gradient(135deg, #d4af37 0%, #f4f1e8 100%); position: relative; z-index: 999;">
         <div class="container">
             <div class="membership-banner-content">
                 <div class="membership-banner-text">
