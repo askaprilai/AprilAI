@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://miamidesigndistrictchamberofcommerce.org/sitemap.xml
+Sitemap: https://miamidesignchamber.com/sitemap.xml
 
 # Block common bot/spam paths
 Disallow: /cgi-bin/

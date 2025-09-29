@@ -5,5 +5,8 @@
       "destination": "/blog-holiday-shopping-2025.html"
     }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "github": {
+    "enabled": false
+  }
 }
